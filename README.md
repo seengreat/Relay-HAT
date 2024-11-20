@@ -60,7 +60,8 @@ In the Raspberry Pi mainboard, the example program for the Bookworm system uses 
 |VCC	|3.3V	|3.3V	|3.3V|
 |GND	|GND	|GND	|GND|
 |DRV	|Relay Trigger Pin	|26	|P25|
-Table 2-2 Relay HAT and Raspberry Pi Interface Definitions
+<br>
+Table 2-2 Relay HAT and Raspberry Pi Interface Definitions<br>
 ### 2.2.2  wiringpi Library Installation
 ```sudo apt-get install wiringpi```<br>
 
@@ -81,7 +82,7 @@ For Python 2.x version<br>
 For Python 3.x version<br>
 ```pip3 install wiringpi```<br>
 Note: If the installation fails, you can try the following compiled installation.<br>
-'''git clone --recursive https://github.com/WiringPi/WiringPi-Python.git'''
+```git clone --recursive https://github.com/WiringPi/WiringPi-Python.git```<br>
 Note: The --recursive option can automatically pull submodules. Otherwise, you need to download them manually.
 Enter the newly downloaded WiringPi-Python folder and use the following commands to compile and install:<br>
 For Python 2.x version<br>
@@ -92,7 +93,7 @@ If the following error occurs:<br>
 ``Error: Building this module requires either that swig is installed``<br>
 ``(e.g.,'sudo apt install swig')or that wiringpi wrap.c from the``<br>
 ``source distribution(on pypi) is available.``<br>
-In this case, enter the command sudo apt install swig to install SWIG. After completing the installation, run sudo python3 setup.py install to compile and install. If you see similar information, it indicates that the installation was successful.<br>
+In this case, enter the command ```sudo apt install swig``` to install SWIG. After completing the installation, run ```sudo python3 setup.py``` install to compile and install. If you see similar information, it indicates that the installation was successful.<br>
 ``ges``<br>
 ``Adding wiringpi 2.60.0 to easy-install.pth file``<br>
 ``Installed /usr/local/lib/python3.7/dist-packages/wiringpi-2.60.0-py3.7-linux-armv7``<br>
@@ -131,7 +132,8 @@ The wiring definitions for connecting the module to the Arduino UNO mainboard ar
 |----------------------|---------------|
 |VCC	|5V|
 |GND	|GND|
-|DRV	|D7|
+|DRV	|D7|<br>
+
 Table 2-3 Module and Arduino Pin Definitions<br>
 ### 2.3.2 Run Example Program
 After wiring according to Table 2-3, open the project file demo codes\Arduino\relay.ino using the Arduino IDE. Then, select Arduino Uno in Tools -> Board and the corresponding port in Tools -> Port. Click Verify to check for errors, and if verification is successful, upload the code to the Arduino Uno. Observe the relay status.<br>
